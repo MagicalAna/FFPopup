@@ -583,7 +583,7 @@ const FFPopupLayout FFPopupLayout_Center = { FFPopupHorizontalLayout_Center, FFP
                     case FFPopupDismissType_SlideOutToBottom: {
                         CGRect finalFrame = strongSelf.containerView.frame;
                         finalFrame.origin.y = CGRectGetHeight(strongSelf.bounds);
-                        [UIView animateWithDuration:dismissOutDuration delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                        [UIView animateWithDuration:dismissOutDuration delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                             strongSelf.containerView.frame = finalFrame;
                         } completion:completionBlock];
                     }   break;
