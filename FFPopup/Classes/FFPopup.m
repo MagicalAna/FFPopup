@@ -393,7 +393,7 @@ const FFPopupLayout FFPopupLayout_Center = { FFPopupHorizontalLayout_Center, FFP
                     strongSelf.containerView.frame = finalContainerFrame;
                     strongSelf.containerView.transform = CGAffineTransformMakeScale(1.1, 1.1);
                     CGFloat duration = strongSelf.showInDuration ?: kDefaultAnimateDuration;
-                    [UIView animateWithDuration:duration delay:0.0 options:kAnimationOptionCurve animations:^{
+                    [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
                         strongSelf.containerView.alpha = 1.0;
                         strongSelf.containerView.frame = finalContainerFrame;
                         strongSelf.containerView.transform = CGAffineTransformIdentity;
