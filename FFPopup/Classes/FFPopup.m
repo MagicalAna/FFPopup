@@ -417,7 +417,7 @@ const FFPopupLayout FFPopupLayout_Center = { FFPopupHorizontalLayout_Center, FFP
                     startFrame.origin.y = CGRectGetHeight(self.bounds);
                     strongSelf.containerView.frame = startFrame;
                     CGFloat duration = strongSelf.showInDuration ?: kDefaultAnimateDuration;
-                    [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
+                    [UIView animateWithDuration:duration delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                         strongSelf.containerView.frame = finalContainerFrame;
                     } completion:completionBlock];
                 }   break;
